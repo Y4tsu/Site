@@ -1,0 +1,236 @@
+body{
+	background-image: url("https://images5.alphacoders.com/742/742631.jpg");
+	background-size: 100%;
+	background-position: center;
+}
+
+.container{
+	width: 700px;
+	height: 500px;
+	margin: 100px auto;
+}
+
+.register{
+	align-items: center;
+	width: 200%;
+	height: 440px;
+}
+
+.glass{
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.register{
+	position: relative;
+  	width: 280px;
+  	margin-top: 50px;
+  	margin-bottom: 50px;
+  	margin-right: auto;
+  	margin-left: auto;
+  	height: 400px;
+  	border-radius: 20px;
+  	padding: 10px;
+  	box-sizing: border-box;
+  	background: #ecf0f3;
+  	box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+label {
+ 	margin-bottom: 4px;
+}
+
+label.inline {
+ 	display:inline;
+ 	margin-right:50px;
+}
+
+.form{
+	text-align: left;
+  	margin-top: 30px;
+}
+h1{
+	text-align: center;
+	color: #9F8141;
+}
+
+input::placeholder{
+	color: gray;
+}
+
+input{
+	caret-color: #9F8141;
+	background: #ecf0f3;
+  	padding: 10px;
+  	padding-left: 20px;
+  	height: 50px;
+  	font-size: 14px;
+  	border-radius: 50px;
+  	box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.save{
+  color: white;
+  margin-top: 20px;
+  background: #9F8141;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+.save:hover{
+	box-shadow: none;
+}
+
+label, input, .save{
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.clock{
+	width: 175px;
+	height: 175px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(clock.png);
+	background-size: cover;
+	border-radius: 50%;
+	background-color: #ecf0f3;
+	border: 4px solid #666;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.clock:before{
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #9F8141;
+	border-radius: 50%;
+	z-index: 10000;
+}
+
+.clock .hour, .clock .min, .clock .sec{
+	position: absolute;
+}
+.clock .hour, .hr{
+	width: 110px;
+	height: 110px;
+}
+.clock .min, .mn{
+	width: 140px;
+	height: 140px;
+}
+.clock .sec, .sc{
+	width: 150px;
+	height: 150px;
+}
+.hr, .mn, .sc{
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	border-radius: 50%;
+}
+.hr:before{
+	content: '';
+	position: absolute;
+	width: 7px;
+	height: 50px;
+	background: #666;
+	z-index: 10;
+	border-radius: 6px  6px 0 0;
+}
+.mn:before{
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 70px;
+	background: #9F8141;
+	z-index: 11;
+	border-radius: 6px  6px 0 0;
+}
+.sc:before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100px;
+	background: #9F8141;
+	z-index: 12;
+	border-radius: 6px  6px 0 0;
+}
+
+.networks{
+	width: 50px;
+	height: 300px;
+	position: absolute;
+	top: auto;
+	left: 0;
+	border-radius: 5px;
+	text-align: center;
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}
+
+.social{
+	border-radius: 11px;
+	border: none;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.facebook{
+	background: url(facebook.png);
+	background-size: cover;
+}
+.instagram{
+	background: url(instagram.png);
+	background-size: cover;
+}
+.discord{
+	background: url(discord.png);
+	background-size: cover;
+}
+.snapchat{
+	background: url(snapchat.png);
+	background-size: cover;
+}
+.gmail{
+	background: url(gmail.png);
+	background-size: cover;
+}
+
+.facebook:hover{
+	filter: invert(1);
+}
+.instagram:hover{
+	filter: invert(1);
+}
+.discord:hover{
+	filter: invert(1);
+}
+.snapchat:hover{
+	filter: invert(1);
+}
+.gmail:hover{
+	filter: invert(1);
+}
+
+
+
+
