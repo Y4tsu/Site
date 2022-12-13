@@ -5,10 +5,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="Site.css">
+		<script src="Site.js"></script>
 	</head>
 	<body>
 		<div class="container">
-			<div class="clock">
+			<div class="clock" title="clock">
 				<div class="hour">
 					<div class="hr" id="hr"></div>
 				</div>
@@ -46,6 +47,8 @@
 			</div>
 			<div class="glass">
 			<div class="register">
+			<div class="card-container" id="card-container">
+				<div class="card-front">
 				<form>
 					<div class="form">
 						<h1>Register</h1>
@@ -59,10 +62,34 @@
 						<input type="password" name="verif" placeholder=" Confirm your password"/>
 
 						<button type="submit" class="save">Register</button>
+						<div class="global">
+						<label for="label">You're already register ? </label>
+						<a onclick="test();" class="link" name="label">Click here</a>
+						</div>
 					</div>
 				</form>
+				</div>
+				<div class="card-back">
+				<form>
+					<div class="form">
+						<h1>Login</h1>
+						<label for="mail">Email address :</label>
+						<input type="mail" name="mail" placeholder=" blabla@gmail.com"/>
+
+						<label for="pwd">Your password :</label>
+						<input type="password" name="pwd" placeholder=" Your password"/>
+
+						<button type="submit" class="save">Login</button>
+						<div class="global">
+						<label for="label">You're not register ? </label>
+						<a onclick="test();" class="link" name="label2">Click here</a>
+						</div>
+					</div>
+				</form>
+				</div>
 			</div>
-		</div>
+			</div>
+			</div>
 		</div>
 	</body>
 </html>

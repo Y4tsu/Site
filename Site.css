@@ -26,15 +26,15 @@ body{
 }
 
 .register{
-	position: relative;
+		position: relative;
   	width: 280px;
   	margin-top: 50px;
   	margin-bottom: 50px;
   	margin-right: auto;
   	margin-left: auto;
-  	height: 400px;
+  	height: 500px;
   	border-radius: 20px;
-  	padding: 10px;
+  	padding: 2em;
   	box-sizing: border-box;
   	background: #ecf0f3;
   	box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
@@ -83,10 +83,11 @@ input{
   font-weight: 900;
   box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
   transition: 0.5s;
+  margin-bottom: 20px;
 }
-
 .save:hover{
-	box-shadow: none;
+	box-shadow:inset 5px 5px 5px #7D6A3F,
+	           inset -5px -5px 5px #B59144;
 }
 
 label, input, .save{
@@ -231,6 +232,37 @@ label, input, .save{
 	filter: invert(1);
 }
 
+.register{
+	width: 400px;
+}
 
+.card-container{
+	transition: transform 3s;
+	transform-style: preserve-3d;
+}
 
+.card-front, .card-back{
+	backface-visibility: hidden;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+}
 
+.card-back{
+	transform: rotateY(0.5turn);
+}
+
+.link:hover{
+	border-radius: 5px;
+	background: #ecf0f3;
+	box-shadow:  5px 5px 5px #7f8283,
+             -5px -5px 5px #ffffff;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.link{
+	cursor: pointer;
+	text-decoration: underline;
+}
