@@ -17,5 +17,5 @@ var width = document.documentElement.clientWidth;
 var height = document.documentElement.clientHeight;
 
 if(width<1366 && height<768){
-	document.getElementById('body').style.backgroundImage = "none";
+	document.body.style.backgroundImage = "none";
 }
