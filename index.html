@@ -11,6 +11,8 @@
 		<script type="text/javascript">
 			if(screen.width < 801){
 				document.body.style.backgroundImage = "none";
+				document.getElementById('glass').style.width = "100%";
+				document.getElementById('glass').style.height = "100%";
 			}
 			else{
 				document.body.style.backgroundImage = "url('https://images5.alphacoders.com/742/742631.jpg')";
@@ -24,8 +26,8 @@
 				<button class="social snapchat" onclick="window.location.href='#';"></button>
 				<button class="social gmail" onclick="window.location.href='#';"></button>
 			</div>
-			<div class="glass">
-			<div class="register">
+			<div class="glass" id="glass">
+			<div class="register" id="register">
 			<div class="card-container" id="card-container">
 				<div class="card-front">
 				<form>
